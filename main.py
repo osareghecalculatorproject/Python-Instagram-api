@@ -92,4 +92,4 @@ def get_post(shortcode):
         return jsonify({'error': f"Failed to fetch post: {response.status_code}"}), response.status_code
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
